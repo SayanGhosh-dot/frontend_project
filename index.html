@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Project</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">
+          <span class="logo-icon">&#9670;</span>
+          <span class="logo-text">Frontend Project</span>
+        </div>
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">Welcome to My Frontend Project</h1>
+            <p class="hero-subtitle">
+              A clean, responsive web application built with HTML, CSS, and JavaScript.
+            </p>
+            <div class="hero-actions">
+              <a href="#features" class="btn btn-primary">Explore Features</a>
+              <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <p class="section-subtitle">A brief introduction to this project</p>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                This is a modern frontend project built using vanilla HTML5, CSS3, and
+                JavaScript. It demonstrates best practices for structuring a web project
+                without relying on any external frameworks.
+              </p>
+              <p>
+                The project features a fully responsive layout, smooth scrolling
+                navigation, an interactive theme toggle, and clean semantic markup that
+                is accessible and SEO-friendly.
+              </p>
+            </div>
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-number" data-target="100">0</span>
+                <span class="stat-label">% Vanilla JS</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="0">0</span>
+                <span class="stat-label">Dependencies</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="100">0</span>
+                <span class="stat-label">% Responsive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Features</h2>
+          <p class="section-subtitle">What this project includes</p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">&#128187;</div>
+              <h3>Responsive Design</h3>
+              <p>Fully responsive layout that works beautifully on all screen sizes, from mobile to desktop.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">&#127775;</div>
+              <h3>Dark Mode</h3>
+              <p>Toggle between light and dark themes. Your preference is saved automatically.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">&#9889;</div>
+              <h3>Fast &amp; Lightweight</h3>
+              <p>Zero external dependencies means instant load times and no bundle bloat.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">&#9855;</div>
+              <h3>Accessible</h3>
+              <p>Built with semantic HTML and ARIA attributes to ensure great accessibility.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">&#127760;</div>
+              <h3>Smooth Navigation</h3>
+              <p>Smooth-scroll navigation with an active link indicator for a polished UX.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">&#127775;</div>
+              <h3>Clean Code</h3>
+              <p>Well-structured, readable, and maintainable HTML, CSS, and JavaScript.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Send a message</p>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+                autocomplete="name"
+              />
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+              />
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here…"
+                required
+              ></textarea>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-success" id="formSuccess" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Frontend Project. All rights reserved.</p>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon">&#9790;</span>
+        </button>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
