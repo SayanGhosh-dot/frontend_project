@@ -1,0 +1,70 @@
+:root{
+    --border-radius:8px;
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(125, 215, 215);
+}
+.box{
+    background-color: rgb(202, 169, 125);
+    padding: 30px;
+    width: 400px;
+    border-radius: var(--border-radius);
+}
+.qr-header h1{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    
+}
+.qr-header input{
+    width: 100%;
+    margin-block: 12px;
+}
+.qr-header input,select{
+    padding: 8px;
+    border-radius: var(--border-radius);
+    border: none;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid rgb(214, 123, 13);
+}
+.qr-header label{
+    color:rgb(17, 19, 19);
+    font-size:20px;
+    margin-top: 6px;
+}
+.qr-header div{
+    display: flex;
+    justify-content: space-between;
+}
+.qr-footer{
+    display: flex;
+    justify-content: center;
+}
+.qr-footer a{
+   text-decoration: none;
+   font-size: 20px;
+   padding: 14px 36px;
+   margin-inline: 2px;
+   color:blue;
+   font-weight: 600;
+}
+.qr-body{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
